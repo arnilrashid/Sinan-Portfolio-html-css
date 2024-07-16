@@ -69,6 +69,23 @@ a{
     border-radius: 32px;
 }
 
+.title h2{
+    font-family: var(--secondary-font);
+    color: var(--primary-accent);
+    font-size: var(--h1-size);
+    font-weight: 400;
+    line-height: 72px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* header */
 header{
@@ -384,13 +401,13 @@ header .header-container{
     background-image: url(assets/images/body-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
     position: relative;
     padding: 128px;
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
-.mouse-scroll{
+.about .mouse-scroll{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -463,4 +480,89 @@ header .header-container{
 .about .second-card{
     margin-top: 37px;
     margin-left: 128px;
+}
+
+
+/* skills  */
+.skills{
+    background-image: url(assets/images/Skills-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.skills .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+}
+.skills .title h2{
+    margin-bottom: 32px;
+}
+
+
+
+.skills .card-container {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.card-container .card{
+    background-color: #98FAEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    margin: 64px 68px 90px 68px;
+    border-radius: 8px;
+    border-left: #0C73B8 solid 8px;
+}
+.card-container .card h4{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--col-black);
+    margin: 8px 0 12px 0;
+}
+.card-container .card p{
+    color: var(--col-black);
+}
+.card-container img{
+    height: 32px;
+    width: 32px;
+}
+.skills .platforms{
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .platforms .circle {
+    height: 144px;
+    width: 144px;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills .platforms .orrange{
+    background-color: #E54F26;
+}
+
+.skills .platforms .blue{
+    background-color: #0C73B8;
+}
+.skills .platforms .yellow{
+    background-color: #E7A020;
+}
+.skills .platforms .cyan{
+    background-color:#28A9E0;
 }

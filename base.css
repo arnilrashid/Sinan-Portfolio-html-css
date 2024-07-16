@@ -361,18 +361,20 @@ header .header-container{
 .hero .social-button img{
     height: 24px;
     width: 24px;
-    margin: 19px;
 }
+.hero .social-button a{
+    margin: 18px;
 
+}
 .hero .social-button .active{
     background-color: var(--col-white);
     height: 40px;
     width: 40px;
     border-radius: 40px;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-    margin: 8px;
+    margin: 10px;
 }
 
 

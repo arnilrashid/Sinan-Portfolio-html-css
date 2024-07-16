@@ -77,33 +77,33 @@ header .header-container{
     border-bottom: 1px solid #43454D;
     box-sizing: border-box;
 }
+.header-container a{
+    color: var(--col-white);
+    font-size: var(--h2-size);
+    font-weight: 500;
+    text-decoration: none;
+}
 .logo{
     color: var(--primary-accent);
-}
-.logo-white{
-    color: var(--col-white);
+    margin-right: 8px;
 }
 .navbar{
     display: flex;
     align-items: center;
     position: relative;
-
 }
-.navbar a {
+.navbar .directory a {
     text-decoration: none;
     color: var(--col-white);
+    font-size: 24px;
 }
 .navbar ul{
     list-style: none;
     display: flex;
-
 }
-.directory .active{
+.navbar .directory .active{
     margin: 0 32px 0 0 ;
     color: var(--primary-accent);
-}
-.navbar .directory a{
-    font-size: 24px;
 }
 .search-box{
     width: 204px;
@@ -118,20 +118,22 @@ header .header-container{
     height: 20px;
     width: 20px;
     position: absolute;
+    top: 6px;
     left: 395px;
 }
-.social-media{
-    align-items: center;
+.social-media img{
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
 }
 .social-media a{
-    margin: 0 var(--spacing-md) 0 0;
+    text-decoration: none;
+    color: var(--col-white);
+    font-size: 16px;
+    margin-right: var(--spacing-md);
+    display: flex;
+    align-items: center;
 }
-.social-media img{
-    height: 16.67px;
-    width: 16.67px;
-    margin: 0 8px 0 0;
-}
-
 
 /* hero */
 .hero{
@@ -139,21 +141,22 @@ header .header-container{
     width: 100%;
     height: 910px;
 }
-.hero .hero-container{
-    width: 1664px;
-    height: 718px;
-    margin: 0 auto;
-    padding: 64px 128px 0 128px;
-    box-sizing: border-box;
-}
-.hero-container .branding{
+.hero .branding{
     font-size: var(--branding-size);
     line-height: 134px;
     color: #98FAEC;
     display: flex;
     justify-content: center;
-    margin-bottom: 64px;
+    padding: 64px 0;
 }
+.hero .hero-container{
+    width: 1664px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 /* cv */
@@ -165,6 +168,7 @@ header .header-container{
     border-bottom-right-radius: 160px;
     box-shadow: -4px -4px 2px var(--primary-accent);
     box-sizing: border-box;
+    margin-left: 128px;
 }
 
 
@@ -202,52 +206,39 @@ header .header-container{
     width: 14px;
 }
 .hero .hero-container .cv .contact p{
-    font-family: var(--secondary-font);
-    font-size: var(--secondary-text-size);
+    font-family: var(--primary-font);
     font-size: var(--secondary-text-size);
     margin-left: 16px;
 }
-.hero .hero-container .cv .contact p:first-child{
-    margin-left: 0;
-}
-.hero .hero-container .cv .contact .tags{
+.hero .hero-container .cv .contact ul{
     display: flex;
 
 }
-.hero .hero-container .cv .contact .tags p{
+.hero .hero-container .cv .contact li{
+    list-style: none;
+    color: var(--col-black);
     background-color: var(--primary-accent);
     border-radius: 8px;
-    font-family: var(--secondary-font);
-    line-height: 18px;
-    font-size: var(--secondary-text-size);
     padding: 0 8px;
-    color: var(--col-black);
+    margin-right: var(--spacing-sm);
+    font-family: var(--primary-font);
+    font-size: 14px;
 }
-
-
-
-
-
-
-
-
-
 
 .cv button{
     font-family: var(--secondary-font);
     font-size: 20px;
     background-color: var(--col-white);
     border-radius: 32px;
-    padding: 16px 32px;
+    padding: 16px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 32px 0 37px 24px;
+    margin: 32px 0 0 24px;
     border: none;
+    cursor: pointer;
 }
-
-
-.cv button img{
+.hero-container .cv button img{
     height: 24px;
     width: 24px;
     margin: 0 0 0 var(--spacing-sm); 

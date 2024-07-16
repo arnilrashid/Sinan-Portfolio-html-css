@@ -244,4 +244,54 @@ header .header-container{
     margin: 0 0 0 var(--spacing-sm); 
 }
 
+.hero .hero-container .conversation {
+    width: 700px;
+    margin-left: 128px;
+}
+.hero .hero-container .conversation h1{
+    color: var(--col-white);
+    margin-bottom: 66px;
+    line-height: 72px;
+    margin-top: 62px;
+    margin-left: var(--spacing-sm);
+}
+.hero .hero-container .conversation p{
+    margin-left: var(--spacing-sm);
 
+}
+.hero .hero-container .conversation a{
+    color: var(--primary-accent);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: var(--h2-size);
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: var(--spacing-sm);
+}
+.hero .design-plate{
+    position: relative;
+}
+.hero .hero-container .conversation h1::before{
+    content: "<h1>";
+    font-size: var(--secondary-text-size);
+    color: var(--primary-accent);
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+.hero .hero-container .conversation h1::after{
+    content: "</h1>";
+    font-size: var(--secondary-text-size);
+    color: var(--primary-accent);
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+
+}
+.hero .hero-container .conversation a img{
+    height: 40px;
+    width: 40px;
+    margin-left: var(--spacing-sm);
+}

@@ -998,10 +998,10 @@ footer p, footer a{
     margin-right: 200px;
 }
 
-.fffff p{
+.copyright p{
     padding: 0;
 }
-.fffff a{
+.copyright a{
     padding: 0;
     color: var(--primary-accent);
     text-decoration: underline;

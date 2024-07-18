@@ -489,6 +489,7 @@ header .header-container{
 
 
 /* skills  */
+
 .skills{
     background-image: url(assets/images/Skills-bg.png);
     background-size: cover;
@@ -562,8 +563,6 @@ header .header-container{
     width: 32px;
 }
 
-/* img */
-
 .skills .platforms{
     display: flex;
     justify-content: space-between;
@@ -622,3 +621,93 @@ header .header-container{
     color: #28A9E0;
 }
 
+/* works */
+.works{
+    background-image: url(assets/images/Works.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 64px;
+}
+.works .title h2{
+    margin-bottom: var(--spacing-sm);
+    line-height: 72px;
+}
+
+.works .title img{
+    margin-bottom: 8px;
+}
+
+
+.works .works-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 921px;
+    position: relative;
+}
+.works .works-container .arrow:nth-child(1){
+ background-color: var(--secondary-accent);
+ height: 72px;
+ width: 72px;
+ border-radius: 48px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.works .works-container .arrow:nth-child(3){
+    background-color: var(--secondary-accent);
+    height: 72px;
+    width: 72px;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.works .monitor > img:nth-child(1) {
+    position: absolute;
+    top: 56px;
+    left: 89px;
+}
+
+.works .monitor > img:nth-child(2) {
+    position: absolute;
+    left: 338px;
+    top: 132px;
+}
+
+
+
+
+.works .link-website a{
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--col-white);
+    color: var(--primary-accent);
+    position: absolute;
+    top: 66px;
+    left: 472px;
+
+}
+
+.works .link-website #pointer{
+position: absolute;
+top: 86px;
+right: 251px;
+    
+}
